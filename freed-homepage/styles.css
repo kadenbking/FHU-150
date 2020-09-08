@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background: url(img/background_image.jpg);
+    background-size: cover;
+    background-position: bottom left;
+    color: #EBEBEB;
+}
+
+img {
+    display: block;
+    width: 50%;
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+section {margin-bottom: 75px;}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.value {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    height: 250px;
+    margin: 0 10px;
+}
+
+.academics {
+    background-image: 
+        linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.7) ),
+        url('img/FHU-TollingOfTheBell_6X3A0753-X3.jpg');
+}
+
+.academics:hover {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
+        url('img/FHU-TollingOfTheBell_6X3A0753-X3.jpg');
+}
+
+.family {
+    background-image: 
+        linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.7) ),
+        url('img/FHU-Interface-CanoeingTheBuffalo_BW4A2021-X3.jpg');
+}
+
+.family:hover {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
+        url('img/FHU-Interface-CanoeingTheBuffalo_BW4A2021-X3.jpg');
+}
+
+.christianity {
+    background-image: 
+        linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.7) ),
+        url('img/prayer_circle.jpeg');
+}
+
+.christianity:hover {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
+        url('img/prayer_circle.jpeg');
+}
+
+
+.academics h1,
+.family h1, 
+.christianity h1 {
+    font-family: 'Khand', sans-serif;
+    max-width: 250px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.more {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: black;
+    background-size: cover;
+    margin: -10px 5.5% 10px;
+}
+
+.more .header-img {
+    min-width: 100%;
+}
+
+.more p {
+    margin: -10px 10px 50px;
+}
+
+.more .read-more {
+    cursor: pointer;
+    font-family: 'Khand', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    color: #671323;
+    border: 2px solid #671323;
+    padding: 5px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.more .back:hover , .more .read-more:hover {
+    color: #fff;
+    background-color: #671323;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    right: 2%;
+    top: 40px;
+}
+
+.close:hover {
+    color: rgb(50, 50, 50);
+}
+
+@media only screen and (max-width: 899px) {
+    .value {margin: 10px 5%;}
+    .info-big {display: none;}
+    .more .percents img {width: 60%;}
+    .more .back , .more .read-more {font-size: 1.2em;}
+    .close {
+        position: absolute;
+        color: white;
+        right: 3%;
+        top: 35px;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        background-size: cover;
+        background-position: bottom center;
+    }
+    .values {
+        flex-direction: row;
+        margin: 100px 2%;
+    }
+    .info-small-1, .info-small-2, .info-small-3 {
+        display: none;
+    }
+    .more {margin: -75px 15% 0;}
+    .more p {width: 90%; margin: -10px auto 50px;}
+    .more .percents img {width: 65%;}
+    .close {
+        position: absolute;
+        color: white;
+        right: 2%;
+        top: 40px;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-size: cover;
+        background-position: bottom center;
+    }
+    .values {
+        flex-direction: row;
+        margin: 100px 2%;
+    }
+    .more p {width: 75%; margin: -10px auto 50px;}
+    .more .percents img {width: 60%;}
+    .close {
+        position: absolute;
+        color: white;
+        right: 2%;
+        top: 50px;
+        font-size: 1.2em;
+    }
+}
